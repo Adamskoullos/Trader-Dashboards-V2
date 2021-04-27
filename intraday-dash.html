@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TraderDashboards</title>
+    <link rel="icon" type="image/png" href="assets/icons/title-icon.png">
+    <meta name="description" content="TraderDashboards-is-a-free-charting-package-that-is-designed-to-assist-traders-and-investors-in-developing-an-informational-edge-and-is-designed-by-traders-for-traders.">
+    <meta name="author" content="Adam-Skoullos">
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="equities-day-trader, investing, stock-trading, US-equity-index, sector-etf-swing-trading, economic-calendar, free-news-feed,russell-2000, S&P 500, Nasdaq-100">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+</head>
+<body>
+<div class="nav-top">
+    <nav class="navbar navbar-expand-md navbar-dark colors-navbar">
+        <a class="navbar-brand logo-icon" href="index.html"><img src="assets/icons/title-icon.png" alt="logo icon" width="24" height="24"> Intraday-Dash</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>  
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav"> 
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dashboards
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item active" href="intraday-dash.html">Intraday-Dash</a>
+                    <a class="dropdown-item" href="index-dash.html">Index-Dash</a>
+                    <a class="dropdown-item" href="sector-dash.html">Sector-Dash</a>
+                    <a class="dropdown-item" href="stock-dash.html">Stock-Dash</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="subscribe.html">Subscribe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://drive.google.com/file/d/1Ln12hylrqkoI-hx5NzBe4zTPrj-qpbPx/view?usp=sharing" target="_blank">User Guide</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<div class="chart-container-intraday">
+    <!--This row contains the first 3 mini charts-->
+    <div class="row row-container mini-chart-row">
+        <div class="col-12 col-md mini-chart">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+            <div id="tradingview_703ed"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/CURRENCYCOM-OIL_CRUDE/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+            <script src="https://s3.tradingview.com/tv.js"></script>
+            <script>
+            new TradingView.widget(
+            {
+            "autosize": true,
+            "symbol": "FX:USDOLLAR",
+            "interval": "5",
+            "timezone": "exchange",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "hide_top_toolbar": true,
+            "save_image": false,
+            "container_id": "tradingview_703ed"
+            }
+            );
+            </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+        <div class="col-12 col-md mini-chart">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+            <div id="tradingview_a170f"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/CURRENCYCOM-OIL_CRUDE/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+            <script src="https://s3.tradingview.com/tv.js"></script>
+            <script>
+            new TradingView.widget(
+            {
+            "autosize": true,
+            "symbol": "OANDA:XAUUSD",
+            "interval": "5",
+            "timezone": "exchange",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "hide_top_toolbar": true,
+            "save_image": false,
+            "container_id": "tradingview_a170f"
+            }
+            );
+            </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+        <div class="col-12 col-md mini-chart">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+            <div id="tradingview_169f9"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/CURRENCYCOM-OIL_CRUDE/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+            <script src="https://s3.tradingview.com/tv.js"></script>
+            <script>
+            new TradingView.widget(
+            {
+            "autosize": true,
+            "symbol": "OANDA:BTCUSD",
+            "interval": "5",
+            "timezone": "exchange",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "hide_top_toolbar": true,
+            "save_image": false,
+            "container_id": "tradingview_169f9"
+            }
+            );
+            </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+    </div>
+    <!--This row contains the second 3 mini charts-->
+    <div class="row row-container mini-chart-row">
+        <div class="col-12 col-md mini-chart">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+            <div id="tradingview_630ab"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/CURRENCYCOM-OIL_CRUDE/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+            <script src="https://s3.tradingview.com/tv.js"></script>
+            <script>
+            new TradingView.widget(
+            {
+            "autosize": true,
+            "symbol": "CURRENCYCOM:OIL_CRUDE",
+            "interval": "5",
+            "timezone": "exchange",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "hide_top_toolbar": true,
+            "save_image": false,
+            "container_id": "tradingview_630ab"
+            }
+            );
+            </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+        <div class="col-12 col-md mini-chart">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+            <div id="tradingview_a8793"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/CURRENCYCOM-OIL_CRUDE/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+            <script src="https://s3.tradingview.com/tv.js"></script>
+            <script>
+            new TradingView.widget(
+            {
+            "autosize": true,
+            "symbol": "CURRENCYCOM:UK100",
+            "interval": "5",
+            "timezone": "exchange",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "hide_top_toolbar": true,
+            "save_image": false,
+            "container_id": "tradingview_a8793"
+            }
+            );
+            </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+        <div class="col-12 col-md mini-chart">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+            <div id="tradingview_a4f87"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/CURRENCYCOM-OIL_CRUDE/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+            <script src="https://s3.tradingview.com/tv.js"></script>
+            <script>
+            new TradingView.widget(
+            {
+            "autosize": true,
+            "symbol": "GLOBALPRIME:GER30",
+            "interval": "5",
+            "timezone": "exchange",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "hide_top_toolbar": true,
+            "save_image": false,
+            "container_id": "tradingview_a4f87"
+            }
+            );
+            </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+    </div>
+    <!-- This row contains the third 3 mini charts -->
+    <div class="row row-container mini-chart-row">
+        <div class="col-12 col-md mini-chart">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+            <div id="tradingview_6827c"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/CURRENCYCOM-OIL_CRUDE/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+            <script src="https://s3.tradingview.com/tv.js"></script>
+            <script>
+            new TradingView.widget(
+            {
+            "autosize": true,
+            "symbol": "OANDA:US2000USD",
+            "interval": "5",
+            "timezone": "exchange",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "hide_top_toolbar": true,
+            "save_image": false,
+            "container_id": "tradingview_6827c"
+            }
+            );
+            </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+        <div class="col-12 col-md mini-chart">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+            <div id="tradingview_d0687"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/CURRENCYCOM-OIL_CRUDE/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+            <script src="https://s3.tradingview.com/tv.js"></script>
+            <script>
+            new TradingView.widget(
+            {
+            "autosize": true,
+            "symbol": "CURRENCYCOM:US500",
+            "interval": "5",
+            "timezone": "exchange",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "hide_top_toolbar": true,
+            "save_image": false,
+            "container_id": "tradingview_d0687"
+            }
+            );
+            </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+        <div class="col-12 col-md mini-chart">
+            <!-- TradingView Widget BEGIN -->
+            <div class="tradingview-widget-container">
+            <div id="tradingview_d2daf"></div>
+            <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/CURRENCYCOM-OIL_CRUDE/" rel="noopener" target="_blank"><span class="blue-text"></span></a></div>
+            <script src="https://s3.tradingview.com/tv.js"></script>
+            <script>
+            new TradingView.widget(
+            {
+            "autosize": true,
+            "symbol": "CURRENCYCOM:US100",
+            "interval": "5",
+            "timezone": "exchange",
+            "theme": "light",
+            "style": "1",
+            "locale": "en",
+            "toolbar_bg": "#f1f3f6",
+            "enable_publishing": false,
+            "hide_top_toolbar": true,
+            "save_image": false,
+            "container_id": "tradingview_d2daf"
+            }
+            );
+            </script>
+            </div>
+            <!-- TradingView Widget END -->
+        </div>
+    </div>
+    <!-- This row contains the economic calendar and news feed widgets -->
+    <div class="row row-container econ-row">     
+        <div class="col-12 col-md news-feed">
+            <!--Start of Dukascopy news widget (https://www.dukascopy.com/trading-tools/widgets/news) -->
+                <script>DukascopyApplet = {"type":"online_news","params":{"header":false,"borders":false,"defaultLanguage":"en","availableLanguages":["en","fa","fr","he","hu","it","ja","ms","pl","pt","ro","ru","sk","sv","th","uk","zh"],"newsCategories":["finance","forex","stocks","company_news","commodities"],"width":"100%","height":"100%","adv":"popup"}};</script>
+                <script src="https://freeserv-static.dukascopy.com/2.0/core.js"></script>
+            <!-- End of Dukascopy widget -->
+        </div>
+        <div class="col-12 col-md econ-cal">
+            <!-- Start of Dukascopy economic calendar widget (https://www.dukascopy.com/trading-tools/widgets/calendars/economic_calendar)-->
+                <script>DukascopyApplet = {"type":"economic_calendar_new","params":{"showHeader":false,"tableBorderColor":"#e73e25","defaultTimezone":0,"defaultCountries":"c:GB,EU,US","impacts":[1,2],"dateTab":0,"dateFrom":1604188800000,"dateTo":1604707200000,"showColCountry":true,"showColCurrency":false,"showColImpact":true,"showColPrevious":true,"showColForecast":true,"width":"100%","height":"100%","adv":"popup","lang":"en"}};</script>
+                <script src="https://freeserv-static.dukascopy.com/2.0/core.js"></script>
+            <!-- End of Dukascopy Widget -->
+        </div>
+    </div>
+</div>
+<footer class="container-fluid">
+    <h5>Quotes & Charts by TradingView | Economic Calendar & News by Dukascopy</h5>
+    <p>2021 Copyright: TraderDashboards.com</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+</html>
+

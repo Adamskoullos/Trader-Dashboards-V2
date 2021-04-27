@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TraderDashboards</title>
+    <link rel="icon" type="image/png" href="assets/icons/title-icon.png">
+    <meta name="description" content="TraderDashboards-is-a-free-charting-package-that-is-designed-to-assist-traders-and-investors-in-developing-an-informational-edge-and-is-designed-by-traders-for-traders.">
+    <meta name="author" content="Adam-Skoullos">
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="equities-day-trader, investing, stock-trading, US-equity-index, sector-etf-swing-trading, economic-calendar, free-news-feed,russell-2000, S&P 500, Nasdaq-100">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark colors-navbar nav-top">
+    <a class="navbar-brand logo-icon" href="index.html"><img src="assets/icons/title-icon.png" alt="logo icon" width="24" height="24"> TraderDashboards</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>  
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav"> 
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dashboards
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="intraday-dash.html">Intraday-Dash</a>
+                <a class="dropdown-item" href="index-dash.html">Index-Dash</a>
+                <a class="dropdown-item" href="sector-dash.html">Sector-Dash</a>
+                <a class="dropdown-item" href="stock-dash.html">Stock-Dash</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="subscribe.html">Subscribe</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://drive.google.com/file/d/1Ln12hylrqkoI-hx5NzBe4zTPrj-qpbPx/view?usp=sharing" target="_blank">User Guide</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<section class="subscribe-container-outer">
+    <div class="row subscribe-text-row">
+        <div class="col subscribe-container">
+            <div class="subscribe-heading-container">
+                <h4 class="subscribe-heading">Subscribers get <span class="highlight">first access</span> to new trading and investing software<br><br>Be notified to test beta versions and get <span class="highlight">deep discounts</span> on premium products!</h4>
+            </div>
+        </div>
+        <div class="col subscribe-container">
+            <div class="subscribe-heading-container">
+                <div class="subscribe-heading">
+                    <h4 class="">Projects in the pipeline:</h4>
+                    <ul>
+                        <li>Web scraping macro economic analysis app</li> 
+                        <li>Spread trading web app with trade alerts</li>
+                        <li>More trading and investing dashboards</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col subscribe-container">
+            <div class="subscribe-heading-container">
+                <h4 class="subscribe-heading">Have your say!<br><br>Let us know what trading and investing tools your business would benefit from. Jump over to our contact page and get in touch. Happy trading!</h4>
+            </div>
+        </div>
+    </div>
+    <div class="row form-row">
+        <div class="col">
+        <!-- The below form is built using some classes and elements that are built into the javascript file. The below action:url is provided by Google and was obtained 
+            while following along with a brilliant article: https://blog.h-educate.com/how-to-send-an-email-in-a-static-html-page-using-google-sheets-scripts/  This process originally came
+            from a GitHub repo: https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server/blob/master/README.md and auto adds new contacts to Google sheets 
+            as well as bringing Ajax in to manage submit events.  I detail this within the README.md file when testing owner goals-->
+            <form class="gform contact-form pure-form pure-form-stacked" method="POST" data-email="example@email.net"
+            action="https://script.google.com/macros/s/AKfycbw2lF0z3pfyY88t4Jl1aTbLbVWnqtb8ULr01af8/exec">
+                <div class="form-elements">
+                    <fieldset class="form-group">
+                        <input id="name" class="form-control" name="name" placeholder="Name"/>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <input id="email" class="form-control" name="email" type="email" value=""
+                        required placeholder="Email"/>
+                        <span class="email-invalid" style="display:none">
+                        Must be a valid email address</span>
+                    </fieldset>
+                    <!--The below values within the radial options are sent through with the other elements to the Google sheets contact database on submission-->
+                    <div class="radio-container radio-margin">
+                        <div class="form-check form-elements">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="Outright T/I" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                I am an outright trader/investor
+                            </label>
+                        </div>
+                        <div class="form-check form-elements">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="Spread Trader">
+                            <label class="form-check-label" for="exampleRadios2">
+                                I am a spread trader 
+                            </label>
+                        </div>
+                        <div class="form-check form-elements">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="Portfolio M">
+                            <label class="form-check-label" for="exampleRadios3">
+                                I manage an equity long/short portfolio
+                            </label>
+                        </div>
+                    </div>
+                    <button class="btn subscribe-btn">Subscribe</button>
+                </div>
+                <!--The below thank you message is the magic that takes place thanks to the form-submission-handler.js file -->
+                <div class="thankyou_message thankyou-text" style="display:none;">
+                    <h1>Thank you for subscribing!</h1>
+                    <h2>Remember to bookmark our dashboards<br>Happy trading!</h2>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="row">
+        <footer class="col contact-footer">
+            <h5>Powered by TradingView</h5>
+            <p>2021 Copyright: TraderDashboards.com</p>    
+        </footer>
+    </div>
+</section>
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>

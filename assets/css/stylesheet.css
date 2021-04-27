@@ -1,0 +1,1084 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+html, body{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    background-color: #474849;
+    margin: 0;
+    padding: 0;
+    color: #bebdbd;
+    text-align: center;
+    position: relative;
+}
+
+/******************************************* Navbar Colors ********************/
+
+.colors-navbar{
+    color: #bebdbd;
+    background-color: #474849;
+}
+
+.dropdown-menu{
+    background-color: #474849;
+    color: #bebdbd;  
+}
+
+.dropdown-item.active{
+    background-color: #333333;
+}
+
+.nav-item{
+    background-color: #474849;
+}
+
+/* The below code was found on stackoverflow 
+as a solution to get rid of the bootstrap blue on click 
+(https://stackoverflow.com/a/54484583/14461213) */
+
+.dropdown-item:active{
+background-color: #515253;
+}
+/* code from here is my own */
+
+.dropdown-item{
+    color: #bebdbd;
+}
+/******************************************* Top Navbar ********************/
+
+/* Fixed top nav bar and pushing content down */
+.nav-top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+.chart-container{
+    padding-top: 50px;
+}
+
+.dropdown-item{
+    text-align: center;
+}
+
+.navbar-brand{
+    font-size: 1.3rem;
+}
+
+.navbar-expand-md .navbar-collapse{
+    justify-content: end;
+}
+
+/******************************************* Footer ********************/
+
+footer{
+    margin-top: 10px;
+}
+
+footer h5{
+    font-weight: 200;
+    padding: 10px;
+    margin: 15px;
+}
+
+footer p {
+    font-weight: 300;
+}
+/* Home Footer ------------------------------------------------------- */
+.home-footer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+.footer-row{
+    flex:1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+}
+.footer-item-1,
+.footer-item-2,
+.footer-item-3{
+    margin: 20px 0;
+    width:100%;
+    padding: 0;
+    min-width: 200px;
+}
+.footer-item-1 a{
+    margin: 10px;
+    font-weight: 400;
+}
+.footer-item-2 h5,
+.footer-item-2 p{
+    font-weight: 300;
+}
+.footer-item-3 ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0;
+    margin: auto;
+}
+.footer-item-3 a {
+    color: #bebdbd;
+    font-size: 30px;
+}
+/* Home footer---------------------------------------------------- */
+.home-footer h5{
+    padding: 0;
+}
+.home-footer.copy{
+    display: flex;
+    align-items: center;
+}
+
+.contact-footer{
+    width: 100%;
+    text-align: center;
+    background-color:transparent;
+    color: #fff;
+}
+
+.stock-dash-footer{
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #474849;
+    padding-top: 15px;
+}
+
+.home-footer-divider{
+    width: 100%;
+    margin: 0 auto 0 auto;
+    height: 1px;
+    background-color: #5f6163;
+}
+/************************************ Home ******************************/
+
+/**** Carousel ****/
+
+.hero-container{
+    margin-top: 50px;
+}
+
+.carousel-inner{
+    height: 400px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.image-1,
+.image-2,
+.image-3{
+    height: 400px;
+    width: 100%;
+    position: relative;
+}
+
+/* opaque overlay */
+.carousel-item{
+    position: relative;
+}
+.image-overlay{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.image-2{
+    z-index: 0;
+}
+.image-overlay-2{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(226, 62, 59, 0.6);
+    z-index: 0;
+}
+
+.image-overlay-3{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(38,166,154,0.3);
+}
+
+.main-heading-1{
+    position: absolute;
+    top: 30px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    /*color: rgba(38,166,154);*/
+    color: rgb(53, 53, 53);
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 3.4rem;
+}
+
+.main-heading-2{
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 200;
+}
+
+.main-heading-3{
+     position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 200;
+}
+
+.sub-heading-1{
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: rgba(239,83,80);
+    /*color: rgb(53, 53, 53);*/
+    font-family: 'Roboto';
+    font-weight: 400; 
+}
+
+.sub-heading-2{
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    color: #fff;
+    font-family: 'Roboto';
+    font-weight: 300; 
+}
+
+/** Intro section ****************/
+
+.intro-container{
+    height: 400px;
+}
+
+.intro{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.intro-text-col{
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%; 
+    line-height: 2rem;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center; 
+}
+
+.intro-heading{ 
+    font-weight: 300;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.intro-text{
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.intro-divider{
+    width: 80%;
+    margin: 40px auto 0 auto;
+    height: 1px;
+    background-color: #5f6163;
+}
+
+.vid-col-container{
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%; 
+    line-height: 2rem;
+    max-height: 400px;
+    max-width: 560px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: auto;
+    
+}
+
+/** Got this code from: https://mdbootstrap.com/plugins/jquery/iframe/
+ I was having trouble with the responsiveness of the Youtube iframe **/
+.vid-outer{
+    max-width: 560px;
+    max-height: 315px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 20px;
+    
+    
+}
+
+
+.vid-inner{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 2px 3px 10px rgb(0, 0, 0, 0.7);
+    
+}
+/**** End of 3rd party code ****/
+
+/************************************************** Testimonial section ************/
+
+/** The below media queries are to solve the solution to the YouTube iframes massively
+    overlapping the content below ****/
+
+@media (min-width: 300px) {
+    .divider{
+        width:100%;
+        height: 1px;
+        margin-top: 650px;
+    }
+}
+
+
+@media (min-width: 500px) {
+    .divider{
+        width:100%;
+        height: 1px;
+        margin-top: 700px;
+    }
+}
+
+@media (min-width: 576px) {
+    .divider{
+        width:100%;
+        height: 1px;
+        margin-top: 750px;
+    }
+}
+
+@media (min-width: 768px) {
+    .divider{
+        width:100%;
+        height: 1px;
+        margin-top: 300px;
+    }
+}
+
+@media (min-width: 992px) {
+    .divider{
+        width:100%;
+        height: 1px;
+        margin-top: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .divider{
+        width:100%;
+        height: 1px;
+        margin-top: 450px;
+    }
+}
+
+.testimonial-container{
+    background-color: rgb(243, 243, 243);
+    color: #474849;
+}
+
+.testimonial{
+    margin-bottom: 70px;
+    margin-top:70px;
+}
+
+.testimonial h5{
+    margin-top:10px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.testimonial h3{
+    margin-top:10px;
+    font-weight: 200;
+}
+
+.testimonial p{
+    font-weight: 300;
+}
+
+/* center profile image for testimonials */
+.profile-pic{
+    height: 140px;
+    border-radius: 50%;
+    box-shadow: 1px 2px 4px rgb(0, 0, 0, 0.4); 
+}
+
+/*******  home page - Subscribe & Contact section *****************/
+
+.contact-container-1,
+.subscribe-container{
+    height: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.subscribe-btn{
+    background-color: rgba(38,166,154); 
+    font-family: 'Roboto';
+    color: #fff;
+    font-weight: 300;
+}
+
+.contact-btn{
+    background-color: rgba(239,83,80); 
+    font-family: 'Roboto';
+    color: #fff;
+    font-weight: 300;
+}
+
+.contact-text,
+.subscribe-text{
+    margin: 5px 10%;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+
+/*** Social media links ****/
+
+.social-links-container{
+    height: 100%;
+    width: 80%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-links-container ul{
+    display: flex;
+    width: 100%; 
+    justify-content: space-around;
+    margin: auto; 
+    padding: 0;   
+}    
+
+.social-links-container li{
+    list-style: none;
+}
+
+.social-links-container i{
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/************* Industry logos ************/
+
+.industry-icons-heading{
+    font-weight: 200;
+    color: #474849;
+    margin-top: 15px;
+}
+.industry-icons-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(243, 243, 243);
+    margin-right: 0;
+    margin-left: 0;
+    min-height: 150px;
+    border-top: 1px solid rgba(128, 128, 128, 0.267);
+}
+
+.industry-icons-col-1{
+    height:40px;
+    width: 40px;
+    margin: 0;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.industry-icons-col-1 img{
+    height: 40px;
+    width: 40px;
+}
+
+.industry-icons-col-2{
+    height:25px;
+    width: 116.25px;
+    margin: 0;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.industry-icons-col-2 img{
+    height: 25px;
+    width: 116.25px;
+}
+
+.industry-icons-col-3{
+    height:25px;
+    width: 72.25px;
+    margin: 0;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.industry-icons-col-3 img{
+    height: 25px;
+    /* width: 73.25px; */
+}
+
+.industry-icons-col-4{
+    height:25px;
+    width: 89.5px;
+    margin: 5px 0;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.industry-icons-col-4 img{
+    height: 25px;
+    width: 89.5px;
+}
+
+/******************************************* Index-Dash & Sector-Dash ********************/
+
+.row-container{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.chart{
+    min-height: 400px;
+    margin: 10px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 4px;
+}
+  
+.tradingview-widget-container{
+    width: 100%;
+    height: 100%;
+}
+
+/* Dolar Index charts */
+
+#tradingview_3a7ec{
+    width: 100%;
+    height: 100%;
+}
+
+#tradingview_756c0{
+    width: 100%;
+    height: 100%;
+}
+
+/* Gold charts */
+
+#tradingview_1a22b{
+    width: 100%;
+    height: 100%;
+}
+
+#tradingview_7db82{
+    width: 100%;
+    height: 100%;
+}
+
+/* Crude Oil charts */
+
+#tradingview_fae5d{
+    width: 100%;
+    height: 100%;
+}
+
+#tradingview_41c37{
+    width: 100%;
+    height: 100%;
+}
+
+/* S&P 500 charts */
+
+#tradingview_e13f2{
+    width: 100%;
+    height: 100%;
+}
+
+#tradingview_6baf4{
+    width: 100%;
+    height: 100%;
+}
+
+/* Dow Jones charts */
+
+#tradingview_6bd7c{
+    width: 100%;
+    height: 100%;
+}
+
+#tradingview_21e45{
+    width: 100%;
+    height: 100%;
+}
+
+/* Russell 2000 charts */
+
+#tradingview_44ffc{
+    width: 100%;
+    height: 100%;
+}
+
+#tradingview_d6af2{
+    width: 100%;
+    height: 100%;
+}
+
+/* Nasdaq 100 charts */
+
+#tradingview_9ac06{
+    width: 100%;
+    height: 100%;
+}
+
+#tradingview_c2bf6{
+    width: 100%;
+    height: 100%;
+}
+
+/***************************** Sector-dash ************************************/
+
+/* Tech */
+#tradingview_43d59{
+    width: 100%;
+    height: 100%;
+}
+
+/* Healthcare*/
+#tradingview_f2804{
+    width: 100%;
+    height: 100%;
+}
+
+/* Real-Estate */
+#tradingview_6dd7a{
+    width: 100%;
+    height: 100%;
+}
+
+/* Materials */
+#tradingview_25d91{
+    width: 100%;
+    height: 100%;
+}
+
+/* Consumer Disc */
+#tradingview_732f3{
+    width: 100%;
+    height: 100%;
+}
+
+/* Financials */
+#tradingview_3c44e{
+    width: 100%;
+    height: 100%;
+}
+
+/* Energy */
+#tradingview_e8131{
+    width: 100%;
+    height: 100%;
+}
+
+/* Industrials */
+#tradingview_9ce10{
+    width: 100%;
+    height: 100%;
+}
+
+/* Utilities */
+#tradingview_6b966{
+    width: 100%;
+    height: 100%;
+}
+
+/* Consumer Staples */
+#tradingview_f4b64{
+    width: 100%;
+    height: 100%;
+}
+
+/* Telecom */
+#tradingview_3f7d3{
+    width: 100%;
+    height: 100%;
+}
+
+/*************************************** Stock-Dash *********************/
+.stock-dash-container{
+    margin-bottom: 70px;
+}
+
+.chart-container{
+    margin-bottom: 20px;
+
+}
+
+.econ-chart{
+    min-height: 600px;
+    margin: 10px 10px 10px 10px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.stock-chart{
+    min-height: 600px;
+    margin: 10px 10px 10px 10px;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+/* Any product chart Daily*/
+#tradingview_c91cb{
+    width: 100%;
+    height: 100%;
+}
+
+/* Any product chart 15 minute*/
+#tradingview_f1503{
+    width: 100%;
+    height: 100%;
+}
+
+.stock-dash-container{
+    padding-top: 5px;
+}
+
+/*************************************** Intraday-Dash *********************/
+
+.chart-container-intraday{
+    width: 100%;
+    margin: 50px auto 20px auto;
+}
+
+.ticker-row,
+.mini-chart-row,
+.econ-row{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Mini chart */
+
+
+.mini-chart{
+    min-height: 200px;
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 4px;
+
+}
+
+/* $ index */
+#tradingview_703ed{
+    width: 100%;
+    height: 100%;
+}
+
+/* Bitcoin */
+#tradingview_169f9{
+    width: 100%;
+    height: 100%;
+}
+
+/*Crude oil */
+#tradingview_630ab{
+    width: 100%;
+    height: 100%;
+}
+
+/* FTSE 100 */
+#tradingview_a8793{
+    width: 100%;
+    height: 100%;
+}
+
+/* German DAX */
+#tradingview_a4f87{
+    width: 100%;
+    height: 100%;
+}
+
+/* Gold */
+#tradingview_a170f{
+    width: 100%;
+    height: 100%;
+}
+
+/* Russell 2000 */
+#tradingview_6827c{
+    width: 100%;
+    height: 100%;
+}
+
+/* S&P 500 */
+#tradingview_d0687{
+    width: 100%;
+    height: 100%;
+}
+
+/* Nasdaq 100 */
+#tradingview_d2daf{
+    width: 100%;
+    height: 100%;
+}
+
+.econ-cal,
+.news-feed{
+    background-color: #fff;
+    margin: 10px;
+    border-radius: 4px;
+    min-height: 500px;
+}
+
+.econ-cal-scroll{
+    overflow: scroll;
+}
+
+/*************************************** Contact page ************************/
+
+.contact-heading-container{
+    padding-top: 6%;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .contact-heading-container{
+        padding-top: 3%;
+    }
+}
+
+.contact-heading{
+    color: #fff;
+    font-weight: 200;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 900px;
+    background-color: #414141e5;
+    border-radius: 4px;
+    line-height: 2rem;
+    padding: 10px; 
+}
+
+.contact-container-outer{
+    margin-top: 20px;
+    background-image: url('../images/contact-bg.jpg');
+    background-size: cover;
+    background-position: bottom; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative; 
+    display: flex;
+    padding-top: 15px;
+    height: 100vh;
+    overflow: auto;
+}
+
+.contact-container{
+    flex: 1;
+    
+}
+
+.contact-container-outer::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+}
+
+.contact-form{
+    position: relative;
+    margin: 0 auto;
+    z-index: 2;
+    width: 90%;
+    max-width: 400px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.radio-container{
+    left: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 300;
+}
+
+.message {
+  resize: both;
+  overflow: auto;
+  color: #474849;
+  margin-bottom: 10px;
+}
+
+.map-container{
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.map-container iframe{
+    border: 0;
+    border-radius: 4px;
+    position: relative;
+    height: 400px;
+    width: 100%;
+}
+
+/*********************************** Subscribe page ***********************/
+
+.subscribe-container-outer .row{
+    margin-right: 0;
+    margin-left: 0;
+}
+.subscribe-container-outer{
+    margin-top: 20px;
+    height: 100vh;
+    overflow: auto;
+    background-image: url('../images/contact-bg.jpg');
+    background-size: cover;
+    background-position: bottom; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    padding-top: 150px;
+}
+.subscribe-container-outer::-webkit-scrollbar {
+    width: 0px;               /* width of the entire scrollbar */
+}
+
+.subscribe-text-row{
+    display: flex;
+    align-items: stretch;
+    flex-flow: wrap;
+}
+
+.subscribe-heading-container{
+    height: 100%;
+    display: flex;
+}
+
+.highlight{
+    font-weight: 300;
+    color: rgba(239,83,80);
+}
+
+.thankyou-text{
+    background-color: rgba(38,166,154,0.7);
+    border-radius: 4px;
+    padding: 15px;
+}
+
+.thankyou-text h1{
+    font-weight: 200;
+    color: #fff;
+    line-height: 3rem;
+    width: 100%;
+}
+
+.thankyou-text h2{
+    font-weight: 300;
+    color: #fff;
+    line-height: 3rem;
+}
+.subscribe-heading{
+    height: 100%;
+    color: #fff;
+    font-weight: 200;
+    margin: 0 auto;
+    width: 95%;
+    max-width: 900px;
+    background-color: #414141e5;
+    border-radius: 4px;
+    line-height: 2rem;
+    padding: 10px; 
+}
+
+.subscribe-heading li{
+    text-align: left;
+    font-size: 1.2rem;
+}
+
+.form-row{
+    margin-top: 60px;
+    margin-bottom: 15%;
+}
+
+
+.radio-margin{
+    margin-bottom: 30px;
+}
+

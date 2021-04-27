@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TraderDashboards</title>
+    <link rel="icon" type="image/png" href="assets/icons/title-icon.png">
+    <meta name="description" content="TraderDashboards-is-a-free-charting-package-that-is-designed-to-assist-traders-and-investors-in-developing-an-informational-edge-and-is-designed-by-traders-for-traders.">
+    <meta name="author" content="Adam-Skoullos">
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="equities-day-trader, investing, stock-trading, US-equity-index, sector-etf-swing-trading, economic-calendar, free-news-feed,russell-2000, S&P 500, Nasdaq-100">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+</head>
+<body>
+<div class="nav-top">
+    <nav class="navbar navbar-expand-md navbar-dark colors-navbar">
+        <a class="navbar-brand logo-icon" href="index.html"><img src="assets/icons/title-icon.png" alt="logo icon" width="24" height="24"> TraderDashboards</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>  
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav"> 
+                <li class="nav-item active">
+                    <a class="nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dashboards
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="intraday-dash.html">Intraday-Dash</a>
+                    <a class="dropdown-item" href="index-dash.html">Index-Dash</a>
+                    <a class="dropdown-item" href="sector-dash.html">Sector-Dash</a>
+                    <a class="dropdown-item" href="stock-dash.html">Stock-Dash</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="subscribe.html">Subscribe</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://drive.google.com/file/d/1Ln12hylrqkoI-hx5NzBe4zTPrj-qpbPx/view?usp=sharing" target="_blank">User Guide</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
+<!--Hero section - The carousel is taken from the Boostrap v4.5 library and edited to suit: https://getbootstrap.com/docs/4.5/components/carousel/-->
+<header class="hero-container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active image-1-container">
+                <img class="d-block w-100 image-1" src="assets/images/hero-1.jpg" alt="First slide">
+                <div class="image-overlay"></div>
+                <h1 class="main-heading-1">Professional<br>Charting Solution</h1>
+                <h3 class="sub-heading-1">Real-Time  & End-of-Day Data</h3>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 image-2" src="assets/images/hero-opaque.png" alt="Second slide">
+                <div class="image-overlay-2"></div>
+                <h1 class="main-heading-2">Built By Traders<br>For Traders</h1>
+                <h3 class="sub-heading-2">Designed Around A Top-Down Approach</h3>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 image-3" src="assets/images/hero-green.jpg" alt="Third slide">
+                <div class="image-overlay-3"></div>
+                <h1 class="main-heading-3">Quickly And Clearly Identify<br>Risk Sentiment<br>&<br>Market Flows</h1>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</header>
+<!--Introduction section-->
+<section class="intro-container">
+    <div class="row-heading"><h3 class="intro-heading">Introduction</h3></div>
+    <div class="row intro">
+        <div class="col-sm-12 col-md-6 intro-text-col">           
+            <p class="intro-text">Designed to promote consistency in trading and investing processes.<br> Watch this short video to get an overview.</p>  
+        </div>
+        <div class="col-sm-12 col-md-6 vid-col-container">
+           <div class="vid-outer">
+           <!--The classes (embed-responsive embed-responsive-16by9) from the below iframe container were taken from: https://mdbootstrap.com/plugins/jquery/iframe/ -->
+                <div class="embed-responsive embed-responsive-16by9 vid-inner">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-7pJ1UhCvFU" allowfullscreen></iframe>
+                </div> 
+            </div>
+        </div>
+    </div>
+    <div class="intro-divider"></div>
+    <div class="row-heading"><h3 class="intro-heading">Platform Demo</h3></div>
+    <div class="row intro">
+        <div class="col-md-6 intro-text-col">           
+            <p class="intro-text">A quick walk through of the TraderDashboards analysis process. See how TraderDashboards can improve your edge and prepare for the open. </p>  
+        </div>
+        <div class="col-sm-12 col-md-6 vid-col-container">
+           <div class="vid-outer">
+           <!--The classes (embed-responsive embed-responsive-16by9) from the below iframe container were taken from: https://mdbootstrap.com/plugins/jquery/iframe/ -->
+                <div class="embed-responsive embed-responsive-16by9 vid-inner">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gBXtDIuMBAQ" allowfullscreen></iframe>
+                </div> 
+            </div>
+        </div>
+    </div>
+</section>
+<div class="row divider"></div>
+<!--Testimonial carousel section - I reused the Bootstrap carousel feature altered it and added the testimonial content.
+The testimonial structure idea came from this Bootstrap example from the v4.5 library: https://getbootstrap.com/docs/4.5/examples/carousel/ again I altered this to suit my needs
+and then added it to the carousel feature.  This worked out really nice. 
+I then researched how to alter the time period between slides in order to extend the time each slide is shown and learned to use the data-interval property
+Finally I also learnt how to prepare and present circular profile images-->
+<section class="testimonial-container">
+    <div id="carouseliexampleindicators" class="carousel slide" data-ride="carousel" data-interval="7500">
+        <div class="carousel-inner">
+            <div class="carousel-item active image-1-container">
+                <div class="row testimonial">
+                    <div class="col"></div>
+                    <div class="col-sm-8 col-md-6">
+                        <div class="text-center">
+                            <img src="assets/images/profile-pic-2.jpg" class="profile-pic" alt="profile picture">
+                        </div>
+                        <h3>Adam Skoullos</h3>
+                        <h5>Developer & Trader at TraderDashboards</h5>
+                        <p><q>Trade inline with the overall market and increase your strategy's expectancy!</q></p>
+                    </div>
+                    <div class="col bottom-div"></div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="row testimonial">
+                    <div class="col"></div>
+                    <div class="col-sm-8 col-md-6">
+                        <div class="text-center">
+                            <img src="assets/images/ricardo-pic.png" class="profile-pic" alt="profile picture">
+                        </div>
+                        <h3>Ricardo Silva</h3>
+                        <h5>Spread Trader</h5>
+                        <p><q>I have halved my prep time and get into better trades using TraderDashboards</q></p>
+                    </div>
+                    <div class="col bottom-div"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Industry Logo's section for 3rd party widgets and stock price data used within the site-->
+<div class="row industry-icons-row">
+    <div class="col-6 col-md-3 industry-icons-col-1">
+        <a href="https://www.tradingview.com/" target="_blank">
+            <img src="assets/images/tradingview.png" alt="tradingview logo">
+        </a>
+    </div>
+    <div class="col-6 col-md-3 industry-icons-col-2">
+        <a href="https://www.dukascopy.com/swiss/english/home/" target="_blank">
+            <img src="assets/images/dukascopy.png" alt="dukascopy logo">
+        </a>
+    </div>
+    <div class="col-6 col-md-3 industry-icons-col-3">
+        <a href="https://www.cboe.com/" target="_blank">
+            <img src="assets/images/cboe.png" alt="cboe logo">
+        </a>
+    </div>
+    <div class="col-6 col-md-3 industry-icons-col-4">
+        <a href="https://www.fxcm.com" target="_blank">
+            <img src="assets/images/fxcm.png" alt="fxcm logo">
+        </a>
+    </div>
+</div>
+
+<footer class="home-footer">
+    <div class="row footer-row">
+        <div class="col-12 col-md-4 footer-item-1">
+            <!--Call to action Subscribe & Contact section-->
+            
+                <a class="btn subscribe-btn" href="subscribe.html" role="button">Subscribe</a>
+                <a class="btn contact-btn" href="contact.html" role="button">Contact</a>
+            
+        </div>
+        <div class="col-12 col-md-4 footer-item-2">
+            <h5>2021 Copyright: TraderDashboards.com</h5>
+        </div>
+        <div class="col-12 col-md-4 footer-item-3">
+            
+                <ul>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <i class="fa fa-youtube-square"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://en-gb.facebook.com/" target="_blank">
+                            <i class="fa fa-facebook-square"></i>
+                        </a>
+                    </li>
+                </ul>
+            
+        </div>
+    </div>
+</footer>
+    <script data-cfasync="false" src="form-submission-handler.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
