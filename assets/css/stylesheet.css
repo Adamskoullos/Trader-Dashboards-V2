@@ -54,6 +54,7 @@ background-color: #515253;
     z-index: 3;
 }
 
+
 .chart-container{
     padding-top: 50px;
 }
@@ -64,12 +65,15 @@ background-color: #515253;
 
 .navbar-brand{
     font-size: 1.3rem;
+    margin-right: auto;
 }
 
 .navbar-expand-md .navbar-collapse{
     justify-content: end;
 }
-
+.navbar-nav{
+    margin: auto 15px auto auto;
+}
 /******************************************* Footer ********************/
 
 footer{
